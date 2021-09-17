@@ -5,6 +5,6 @@ Criado por Brendan Eich
 ## ECMAScript
 Especificação da linguagem de programação
 
-##TC39
+## TC39
 
 [tc39]()
