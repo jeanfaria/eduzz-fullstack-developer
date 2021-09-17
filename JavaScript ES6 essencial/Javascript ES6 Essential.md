@@ -34,14 +34,14 @@ C e C++ por exemplo são linguagens compiladas em linguagem assembly.
 
 Significa que não há verificação em todas as operações, por exemplo pode-se utilizar operador "+" entre uma string e um numero sem que seja gerado erro.  
 ex:  
-'''
+```javascript
     var numero = 20;
     var meuTexto = 'Exemplo';
     
     print(numero + meuTexto)
     
-R: 20Exemplo
-'''javascript
+R: 20Exemplo  
+```
 ## Tipagem dinâmica
 Não precisa ser expecificado o tipo da variável ao declarar uma variável, é possível atribuir uma String a uma variável que foi abastecida anteriormetne com um número.  
 ex:  
