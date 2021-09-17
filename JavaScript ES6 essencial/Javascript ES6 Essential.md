@@ -44,18 +44,19 @@ R: 20Exemplo
 ```
 ## Tipagem dinâmica
 Não precisa ser expecificado o tipo da variável ao declarar uma variável, é possível atribuir uma String a uma variável que foi abastecida anteriormetne com um número.  
-ex:  
+ex:
+
+```javascript  
 Javascript  
 
 var minhaVariavel = 30;    
 minhaVariavel = 'Texto';  
 console.log(minhaVariavel);
-Texto
-'''
-
+Texto  
+```
 Java  
   
-'''java
+```java
 
 public ckass TipagemDinamica {
 	public static void main(String[]args) {
@@ -66,8 +67,8 @@ public ckass TipagemDinamica {
 	}
 }
 
-error: incompatible types: String cannot be converted to int
-'''
+error: incompatible types: String cannot be converted to int  
+```
 ## TypeScript
 Superset da linguagem JS, adiciona tipos e funcionalidades que o JS não tem por padrão por exemplo intefaces, enuns..  
 
