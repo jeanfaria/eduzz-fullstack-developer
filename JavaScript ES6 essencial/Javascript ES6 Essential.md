@@ -27,20 +27,20 @@ ECMAScript 2018 (ES2018)-
 
 ## Linguagem interpretada
 
-Código executado TOP-Down
+Código executado TOP-Down  
 C e C++ por exemplo são linguagens compiladas em linguagem assembly.
 
-- Linguagem de tipagem fraca e dinâmica
+## Linguagem de tipagem fraca
 
 Significa que não há verificação em todas as operações, por exemplo pode-se utilizar operador "+" entre uma string e um numero sem que seja gerado erro.
 ex:
 
-var numero = 20;
-var meuTexto = 'Exemplo';
-
-print(numero + meuTexto)
-
-R: 20Exemplo
+> var numero = 20;
+> var meuTexto = 'Exemplo';
+>
+> print(numero + meuTexto)
+> 
+> R: 20Exemplo
 
 ## Tipagem dinâmica
 Não precisa ser expecificado o tipo da variável ao declarar uma variável, é possível atribuir uma String a uma variável que foi abastecida anteriormetne com um número.
