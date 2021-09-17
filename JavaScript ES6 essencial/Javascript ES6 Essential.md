@@ -34,40 +34,46 @@ C e C++ por exemplo são linguagens compiladas em linguagem assembly.
 
 Significa que não há verificação em todas as operações, por exemplo pode-se utilizar operador "+" entre uma string e um numero sem que seja gerado erro.  
 ex:  
-
-> var numero = 20;
-> var meuTexto = 'Exemplo';
->
-> print(numero + meuTexto)
-> 
-> R: 20Exemplo
-
+'''
+    var numero = 20;
+    var meuTexto = 'Exemplo';
+    
+    print(numero + meuTexto)
+    
+R: 20Exemplo
+'''javascript
 ## Tipagem dinâmica
 Não precisa ser expecificado o tipo da variável ao declarar uma variável, é possível atribuir uma String a uma variável que foi abastecida anteriormetne com um número.  
 ex:  
-Javascript
-> var minhaVariavel = 30;  
-> minhaVariavel = 'Texto';  
-> console.log(minhaVariavel);
-> R: Texto
-> 
-> Java
-> 
-> public ckass TipagemDinamica {
-> 	public static void main(String[]args) {
-> 		int meuNumero = 10;
-> 		meuNumero = "Texto";
-> 		
-> 		System.out.println(meuNumero);
-> 	}
-> }
+Javascript  
 
-R: error: incompatible types: String cannot be converted to int
+var minhaVariavel = 30;    
+minhaVariavel = 'Texto';  
+console.log(minhaVariavel);
+Texto
+'''
 
+Java  
+  
+'''java
+
+public ckass TipagemDinamica {
+	public static void main(String[]args) {
+		int meuNumero = 10;
+		meuNumero = "Texto";
+		
+		System.out.println(meuNumero);
+	}
+}
+
+error: incompatible types: String cannot be converted to int
+'''
 ## TypeScript
 Superset da linguagem JS, adiciona tipos e funcionalidades que o JS não tem por padrão por exemplo intefaces, enuns..  
 
 [TypeScript](https://www.typescriptlang.org/play)
 
-## Função de primeira classe
+## Funções de primeira classe e ordem maior
 
+A funcão pode ser atribuida a uma variavel, estrutura de dados,array,passada por argumento e retornadaporaoutras funções.  
+ex:  
