@@ -35,6 +35,7 @@ C e C++ por exemplo são linguagens compiladas em linguagem assembly.
 Significa que não há verificação em todas as operações, por exemplo pode-se utilizar operador "+" entre uma string e um numero sem que seja gerado erro.  
 ex:  
 ```javascript
+/*Javascript*/  
     var numero = 20;
     var meuTexto = 'Exemplo';
     
@@ -47,18 +48,19 @@ Não precisa ser expecificado o tipo da variável ao declarar uma variável, é 
 ex:
 
 ```javascript  
-Javascript  
+/*Javascript*/  
 
 var minhaVariavel = 30;    
 minhaVariavel = 'Texto';  
 console.log(minhaVariavel);
 Texto  
 ```
-Java  
+
   
 ```java
+/*Java*/  
 
-public ckass TipagemDinamica {
+public class TipagemDinamica {
 	public static void main(String[]args) {
 		int meuNumero = 10;
 		meuNumero = "Texto";
