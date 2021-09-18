@@ -41,7 +41,7 @@ ex:
     
     print(numero + meuTexto)
     
-R: 20Exemplo  
+/*R: 20Exemplo*/  
 ```
 ## Tipagem dinâmica
 Não precisa ser expecificado o tipo da variável ao declarar uma variável, é possível atribuir uma String a uma variável que foi abastecida anteriormetne com um número.  
@@ -53,7 +53,7 @@ ex:
 var minhaVariavel = 30;    
 minhaVariavel = 'Texto';  
 console.log(minhaVariavel);
-Texto  
+/*R: Texto  */
 ```
 
   
@@ -66,10 +66,10 @@ public class TipagemDinamica {
 		meuNumero = "Texto";
 		
 		System.out.println(meuNumero);
-	}
+	}h
 }
 
-error: incompatible types: String cannot be converted to int  
+/*R: error: incompatible types: String cannot be converted to int*/  
 ```
 ## TypeScript
 Superset da linguagem JS, adiciona tipos e funcionalidades que o JS não tem por padrão por exemplo intefaces, enuns..  
@@ -78,5 +78,70 @@ Superset da linguagem JS, adiciona tipos e funcionalidades que o JS não tem por
 
 ## Funções de primeira classe e ordem maior
 
-A funcão pode ser atribuida a uma variavel, estrutura de dados,array,passada por argumento e retornadaporaoutras funções.  
+A funcão pode ser atribuida a uma variavel, estrutura de dados,array,passada por argumento e retornadapor outras funções.  
 ex:  
+
+```javascript  
+
+function getName(){
+	return 'Futuro fullstack Pierre';
+}
+
+function logFn(fn) {
+	console.log(fn());
+}
+
+const logFnResult = logFn;
+
+const obj = {
+	logFn: logFn
+}
+
+const arr = [logFn];
+
+logFnResult(getName);
+
+```
+
+## Closure
+
+
+## Currying
+
+```javascript
+
+/*Javascript*/  
+
+function soma(a) {
+	return function(b) {
+		return a + b;
+	}
+}
+
+const soma2 = soma(2);
+
+soma2(2);
+soma2(3);
+soma2(4);
+soma2(5);
+
+```
+
+## Hoisting
+
+Significa levantar, declarações de variáveis e funcões, por isso é possível utilizar uma variável que foi declarada somente depois da chamada.  
+Ex:  
+
+```javascript
+/*Javascript*/  
+function fn(){
+	console.log(text);
+	var text = 'Bootcamp Eduzz Full Stack';
+	console.log(text);
+}
+
+fn();
+
+```
+
+
