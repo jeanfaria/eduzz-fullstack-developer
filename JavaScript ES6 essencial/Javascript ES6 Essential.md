@@ -137,6 +137,7 @@ Ex:
 
 ```javascript
 /*Javascript*/  
+
 function fn(){
 	console.log(text); // não apresenta erro e retorna undefined
 	var text = 'Bootcamp Eduzz Full Stack';
@@ -146,5 +147,56 @@ function fn(){
 fn();
 
 ```
+  
+## Imutabilidade  
 
+Quando você reatribui uma variável, você está introduzindo a mudança de estado em sua aplicação. Para reproduzir um bug complexo, você geralmente precisa da sequência de cálculos que levam à falha. Quando você altera variáveis, você está jogando fora essa sequência.
+
+Como evitamos as mutações?
+Sempre que precisar modelar uma mudança de estado, você passa o valor anterior para uma função que retorna um novo valor. Não mude o valor antigo apenas retorne um novo.
+
+Não mude objetos em funções
+Escrever funções que retornam cópias alteradas em vez de alterar as propriedades do objeto especificado.
+
+````javascript
+
+// Ruim
+function save(object){
+    object.saved = true;
+    return object;
+}
+
+// Bom
+function save(object){
+    let newObject = object.clone();
+    newObject.saved = true;
+    return newObject;
+}
+
+```
+
+Não troque objetos após a construção.
+Objetos são referências, se evitarmos mudar suas propriedades, evitamos situações de estados pouco claros. Também o nosso código finalizado será mais simples de entender e mais fácil de testar.
+
+```javascript
+
+// Não altere objetos após a construção.
+let request = {
+    method: "GET",
+    uri: "http://pedrobarros.info"
+}
+
+// Não faça isso
+request.method = "POST"
+
+```
+
+[Imutabilidade](https://medium.com/opensanca/imutabilidade-eis-a-quest%C3%A3o-507fde8c6686)   
+
+
+## Tipos e variáveis
+
+- Var   
+- let   
+- const   
 
