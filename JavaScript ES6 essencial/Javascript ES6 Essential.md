@@ -158,7 +158,7 @@ Sempre que precisar modelar uma mudança de estado, você passa o valor anterior
 Não mude objetos em funções
 Escrever funções que retornam cópias alteradas em vez de alterar as propriedades do objeto especificado.
 
-````javascript
+```javascript
 
 // Ruim
 function save(object){
