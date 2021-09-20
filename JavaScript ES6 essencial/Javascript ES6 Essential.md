@@ -105,6 +105,9 @@ logFnResult(getName);
 
 ## Closure
 
+[O que são closures](https://medium.com/@stephanowallace/javascript-mas-afinal-o-que-s%C3%A3o-closures-4d67863ca9fc)  
+
+[mozilla closure na prática](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Closures#closures_na_pr%C3%A1tica)  
 
 ## Currying
 
@@ -129,15 +132,15 @@ soma2(5);
 
 ## Hoisting
 
-Significa levantar, declarações de variáveis e funcões, por isso é possível utilizar uma variável que foi declarada somente depois da chamada.  
+Significa levantar, declarações de variáveis e funcões, por isso é possível utilizar uma função ou variável que foi declarada somente depois da chamada, é boa prática sempre declarar as funcoes antes de utilizar.  
 Ex:  
 
 ```javascript
 /*Javascript*/  
 function fn(){
-	console.log(text);
+	console.log(text); // não apresenta erro e retorna undefined
 	var text = 'Bootcamp Eduzz Full Stack';
-	console.log(text);
+	console.log(text); // passa a retornar o valor atribuído
 }
 
 fn();
