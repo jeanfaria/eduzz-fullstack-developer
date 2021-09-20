@@ -196,7 +196,47 @@ request.method = "POST"
 
 ## Tipos e variáveis
 
-- Var   
-- let   
-- const   
+- var - Não respeita escopo de bloco	
+- let - Respeita o escopo de bloco		
+- const - 
 
+Escopo de bloco		
+
+ex:		
+
+```javascript
+
+//escopo global
+
+{
+	//escopo de função
+}
+
+function teste(){
+	//escopo de função
+}
+
+```
+
+	
+## Tipos e Variáveis
+
+string	
+```javascript
+//Retorna o tamanho de uma string
+
+const textSize = 'Testo';
+console.log('Quantidade de letras: ${textSize');
+
+
+```
+
+number	
+boolean	
+null	
+undefined	
+Symbol	
+Object	
+Function	
+Array	
+	
