@@ -174,7 +174,7 @@ function save(object){
 }
 
 ```
-
+	
 Não troque objetos após a construção.
 Objetos são referências, se evitarmos mudar suas propriedades, evitamos situações de estados pouco claros. Também o nosso código finalizado será mais simples de entender e mais fácil de testar.
 
@@ -190,7 +190,7 @@ let request = {
 request.method = "POST"
 
 ```
-
+	
 [Imutabilidade](https://medium.com/opensanca/imutabilidade-eis-a-quest%C3%A3o-507fde8c6686)   
 
 
